@@ -9,15 +9,41 @@
 </head>
 <body>
   <div class="header1">
-    <h1>Pizza Parlor Order Online</h1>
-  </div>
-  <div class="header2">
-    <h2>Select from the following options to order your pizza.</h2>
+    <h1><strong>Pizza Parlor</strong></h1>
+    <br>
+    <h3>Online Order Form</h3>
   </div>
   <div class="container">
-
-    <br>
-
+  <div class="header2">
+    <h3><strong>PLACE YOUR ORDER.</strong></h3>
+  </div>
+  <div class="form-group">
+    <form id="pizza-order-form">
+      <label for="new-first-name"><h4>NAME</h4></label>
+      <input type="text" class="form-control" id="new-name">
+      <br>
+      <label for="new-address"><h4>ADDRESS</h4></label>
+      <input type="text" class="form-control" id="new-address">
+      <br>
+      <label for="size"><h4>SIZE</h4></label>
+        <select class="form-control" id="new-size" name="size">
+          <option value="">N/A</option>
+          <option value="SM">Small</option>
+          <option value="MD">Medium</option>
+          <option value="LG">Large</option>
+          <option value="XL">Extra Large</option>
+        </select>
+      <br>
+      <label for="toppings"><h4>SAUCE</h4><h6>(choose one)</h6></label>
+        <select class="form-control" id="new-toppings" name="toppings">
+          <option value="">N/A</option>
+          <option value="MA">Marinara</option>
+          <option value="GA">Garlic Cream</option>
+          <option value="PE">Pesto Basil</option>
+        </select>
+      <br>
+      <button type="submit" class="btn-success mt-4 mb-3">Submit</button>
+    </form>
   </div>
   <div class="footer">
     <p>created by John Whitten in 2021 for <a href="https://www.epicodus.com/"> <em>Epicodus</em></a></p>
