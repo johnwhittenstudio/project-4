@@ -18,9 +18,9 @@
 
 ## Description
 
-### _This is the fourth independent project for Epicodus._
+#### _This is the fourth independent project for Epicodus._
 
-### _Project Prompt: Create a website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost._
+#### _Project Prompt: Create a website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost._
 
 - _Allow the user to choose toppings and size for the pizza they'd like to order._
 - _Create a pizza object constructor with properties for toppings and size._
@@ -40,37 +40,37 @@
 
 ### Project Objectives Further Exploration
 
-- _• Site is styled with CSS and images._
+- _Site is styled with CSS and images._
 
-_• Allow users to order more than one pizza with different toppings._
+- _Allow users to order more than one pizza with different toppings._
 
-_• Display the list of pizzas ordered as links that can be clicked for details._
+- _Display the list of pizzas ordered as links that can be clicked for details._
 
-_• Offer a delivery option that then requires address information._
+- _Offer a delivery option that then requires address information._
 
 ## Directions
 
-_{• Open the terminal on your local computer.}_
+- _Open the terminal on your local computer._
 
-_{• Navigate to the parent directory of your preference.}_
+- _Navigate to the parent directory of your preference._
 
-_{• Clone this project using $ git clone https://github.com/johnwhittenstudio/project-4}_
+- _Clone this project using $ git clone https://github.com/johnwhittenstudio/project-4_
 
-### Open Project using Terminal
+#### Open Project using Terminal
 
-_{• Navigate to the top level of the repository with the command $ cd project-4}_
+- _Navigate to the top level of the repository with the command $ cd project-4_
 
-_{• Open index.html in the browser with the command $ open index.html}_
+- _Open index.html in the browser with the command $ open index.html_
 
-### Alternatively
+#### Alternatively
 
-_{• Open the folder using your local machine's user interface by double clicking on the folder project-4}_
+- _Open the folder using your local machine's user interface by double clicking on the folder project-4._
 
-_{• Open the index.html by double clicking on index.html}_
+- _Open the index.html by double clicking on index.html_
 
-### Alternatively
+#### Alternatively
 
-_{• Open a live version of the project in your browser by clicking on https://johnwhittenstudio.github.io/project-4/}_
+- _Open a live version of the project in your browser by clicking on https://johnwhittenstudio.github.io/project-4/_
 
 <!-- The html web form does not need a server to run and can be completed and interacted with by clicking on the "click here" button.
 
@@ -100,4 +100,4 @@ This html web form site contains 3 branches: -->
 
 ## Contact Information
 
-_If you encounter any issues with this site, please contact John at [johnwhitten.studio@gmail.com](mailto:johnwhitten.studio@gmail.com)_
+_If you encounter any issues with this site, please contact John Whitten at [johnwhitten.studio@gmail.com](mailto:johnwhitten.studio@gmail.com)_
