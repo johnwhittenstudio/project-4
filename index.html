@@ -9,45 +9,47 @@
 </head>
 <body>
   <div class="header1">
-    <h1><strong>Pizza Parlor</strong></h1>
+    <h1><strong>PIZZA PARLOR</strong></h1>
     <br>
     <h3>Online Order Form</h3>
   </div>
   <div class="container">
-  <div class="header2">
-    <h3><strong>PLACE YOUR ORDER</strong></h3>
-  </div>
+
   <div class="form-group">
-    <form id="pizza-order-form">
-      <label for="new-first-name"><h4>NAME</h4></label>
-      <input type="text" class="form-control" id="new-name">
-      <br>
-      <label for="new-address"><h4>ADDRESS</h4></label>
-      <input type="text" class="form-control" id="new-address">
-      <br>
-      <label for="size"><h4>SIZE</h4></label>
-        <select class="form-control" id="new-size" name="size">
-          <option value="">N/A</option>
-          <option value="SM">Small - 12 in.</option>
-          <option value="MD">Medium - 16 in.</option>
-          <option value="LG">Large - 20 in.</option>
-          <option value="XL">Extra Large - 24 in.</option>
-        </select>
-      <br>
-      <label for="toppings"><h4>SAUCE</h4><h6>(choose one)</h6></label>
-        <select class="form-control" id="new-toppings" name="toppings">
-          <option value="">N/A</option>
-          <option value="MA">Marinara</option>
-          <option value="GA">Garlic Cream</option>
-          <option value="PE">Pesto Basil</option>
-        </select>
-      <br>
-      <label for="size"><h4>TOPPINGS</h4></label>
-      <div class="form-group" id="toppings">
-        <label for="selected-topping" class="checkbox-inline">
-          <input type="checkbox" id="test" value="mozarella" name="selected-topping" checked>
-          Mozarella
-        </label>
+  <h4>YOUR ORDER</h4>
+  <br>
+  <form id="order-form">
+    <label for="new-first-name"><h5>NAME</h5></label>
+    <input type="text" class="form-control" id="new-name">
+    <br>
+    <label for="new-address"><h5>ADDRESS</h5></label>
+    <input type="text" class="form-control" id="new-address">
+    <br>
+    <label for="size"><h5>SIZE</h5></label>
+      <select class="form-control" id="new-size" name="size">
+        <option value="">N/A</option>
+        <option value="SM">Small - 12 in.</option>
+        <option value="MD">Medium - 16 in.</option>
+        <option value="LG">Large - 20 in.</option>
+        <option value="XL">Extra Large - 24 in.</option>
+      </select>
+    <br>
+    <label for="toppings"><h5>SAUCE</h5><h6>(choose one)</h6></label>
+      <select class="form-control" id="new-toppings" name="toppings">
+        <option value="">N/A</option>
+        <option value="MA">Marinara</option>
+        <option value="GA">Garlic Cream</option>
+        <option value="PE">Pesto Basil</option>
+      </select>
+    <br>
+    <label for="size"><h5>TOPPINGS</h5></label>
+    <div class="checkboxes">
+    <div class="form-group" id="toppings">
+    <span>
+      <label for="selected-topping" class="checkbox-inline">
+        <input type="checkbox" id="test" value="mozarella" name="selected-topping" checked>
+        Mozarella
+      </label>
       <label for="selected-topping" class="checkbox-inline">
         <input type="checkbox" value="feta" name="selected-topping">
         Feta
@@ -71,14 +73,17 @@
       <label for="selected-topping" class="checkbox-inline">
         <input type="checkbox" value="peppers" name="selected-topping">
         Green Peppers
-      </label>    
-    <br>
-      </div>
-      <button type="submit" class="btn-info mt-4 mb-3">Submit</button>
-    </form>
+      </label>  
+    <span>
   </div>
-  <div class="footer">
-    <p>created by John Whitten in 2021 for <a href="https://www.epicodus.com/"> <em>Epicodus</em></a></p>
-  </div>
+  <br>
+    </div>
+    <button type="submit" class="btn btn-lng center-block">PLACE ORDER</button>
+  </form>
+</div>
+<br>
+<div class="footer">
+  <p>created by John Whitten in 2021 for <a href="https://www.epicodus.com/"> <em>Epicodus</em></a></p>
+</div>
 </body>
 </html>
