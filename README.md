@@ -97,6 +97,12 @@ Test: "It should return a Pizza object with two properties for toppings and size
 Code: const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
 Expected Output: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }
 
+Describe: Customer()
+
+Test: "It should return a Customer object with two properties for name and address"
+Code: const customerOne = new Customer("John", "123 Yum Yum Lane, Hungryville, Oregon 12345");
+Expected Output: Customer { name: "John", address: "123 Yum Yum Lane, Hungryville, Oregon 12345" }
+
 ```
 
 ## Known Bugs
