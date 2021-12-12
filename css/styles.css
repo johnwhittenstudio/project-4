@@ -1,0 +1,26 @@
+.header1 {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+.header2 {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+.footer {
+  position: bottom;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-style: bold;
+}

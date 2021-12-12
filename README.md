@@ -62,7 +62,7 @@
 
 - _Open index.html in the browser with the command $ open index.html_
 
-#### Alternatively
+#### Open Project using Local Machine UI
 
 - _Open the folder using your local machine's user interface by double clicking on the folder project-4._
 
@@ -91,7 +91,11 @@ This html web form site contains 3 branches: -->
 ## Tests
 
 ```
-Testing out a text block
+Describe: Pizza()
+
+Test: "It should return a Pizza object with two properties for toppings and size"
+Code: const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
+Expected Output: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }
 
 ```
 
