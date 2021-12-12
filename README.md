@@ -66,7 +66,7 @@
 
 - _Open the folder using your local machine's user interface by double clicking on the folder project-4._
 
-- _Open the index.html by double clicking on index.html_
+- _Open the index.html in your browser by double clicking on index.html_
 
 #### Alternatively
 
@@ -89,6 +89,11 @@ After completing the form, the user needs to click on the "click here" button to
 This html web form site contains 3 branches: -->
 
 ## Tests
+
+```
+Testing out a text block
+
+```
 
 ## Known Bugs
 
