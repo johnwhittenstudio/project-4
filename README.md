@@ -105,13 +105,11 @@ Code: const customerOne = new Customer("John", "123 Yum Yum Lane, Hungryville, O
 Expected Output: Customer { name: "John", address: "123 Yum Yum Lane, Hungryville, Oregon 12345" }
 Test passed!
 
-<!--
-Calculate Price:
-Pizza = $12 flate rate
-Size: small + $1; medium + $4; large + $8; extra large + $12
-Toppings (regular): Mozarella + $2; Pepperoni + $2; Green Peppers + $2
-Toppings (deluxe): Feta + $3, Sun Dried Tomatoes + $3, Roasted Garlic + $3
- -->
+  Calculate Price:
+    • Pizza = $12 flate rate
+    • Size: small + $1; medium + $4; large + $8; extra large + $12
+    • Toppings (regular): Mozarella + $2; Pepperoni + $2; Green Peppers + $2
+    • Toppings (deluxe): Feta + $3, Sun Dried Tomatoes + $3, Roasted Garlic + $3
 
 
 ```
