@@ -96,12 +96,23 @@ Describe: Pizza()
 Test: "It should return a Pizza object with two properties for toppings and size"
 Code: const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
 Expected Output: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }
+Test passed!
 
 Describe: Customer()
 
 Test: "It should return a Customer object with two properties for name and address"
 Code: const customerOne = new Customer("John", "123 Yum Yum Lane, Hungryville, Oregon 12345");
 Expected Output: Customer { name: "John", address: "123 Yum Yum Lane, Hungryville, Oregon 12345" }
+Test passed!
+
+<!--
+Calculate Price:
+Pizza = $12 flate rate
+Size: small + $1; medium + $4; large + $8; extra large + $12
+Toppings (regular): Mozarella + $2; Pepperoni + $2; Green Peppers + $2
+Toppings (deluxe): Feta + $3, Sun Dried Tomatoes + $3, Roasted Garlic + $3
+ -->
+
 
 ```
 
