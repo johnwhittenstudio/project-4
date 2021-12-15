@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <title>Michelob Angelo's</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -18,8 +18,8 @@
     <div class="row">
       <div class="col-md-6">
         <hr>
-        <h3>Customer Info:</h3>
-        <form id="new-order"></form>
+        <h4>Enter Your Info:</h4>
+        <form id="new-contact">
 
           <div class="form-group">
             <label for="new-first-name">First Name</label>
@@ -34,139 +34,143 @@
             <input type="text"  class="form-control" id="new-phone-number">
           </div>
           <div class="form-group">
-            <label for="new-address-1">Address line 1:</label>
-            <input type="text" class="form-control" id="new-address-1">
+            <label for="new-address">Address:</label>
+            <input type="text" class="form-control" id="new-address">
           </div>
           <div class="form-group">
-            <label for="new-address-2">Address line 2:</label>
-            <input type="text" class="form-control" id="new-address-2">
-          </div>
-          <div class="form-group">
-            <label for="new-city">City:</label>
-            <select class="form-control" id="new-city" name="city">
-              <option value="">N/A</option>
-              <option value="PO">Portland</option>
-              <option value="GR">Gresham</option>
-              <option value="TR">Troutdale</option>
-              <option value="WV">Wood Village</option>
-              <option value="FA">Fiarvew</option>
-              <option value="MP">Maywood Park</option>
-            </select>
-          </div>
+            <div class="row">
+              <div class="col-sm-6">
+              <label for="city">City:</label>
+                <input type="text" class="form-control" id="city">
+              </div>
           <br>
-
+          <br>
+          <br>    
           <h4>Pick Your Pie:</h4>
           <div class="form-group type-select">
-            <label for="firstPie">First Pie</label>
-            <input type="radio" id="first" value="first" name="pizza" checked="checked">
-            <label for="secondPie">Second Pie</label>
-            <input type="radio" id="second" value="second" name="pizza">
+            <label for="personal">First Pizza</label>
+            <input type="radio" id="personal" value="personal" name="address-type" checked="checked">
+            <label for="business">Second Pizza</label>
+            <input type="radio" id="business" value="business" name="address-type">
           </div>
           <br>
-
-          <div class="form-group">
-          <label for="size"><strong>Size</strong> (choose one)</label>
-            <select class="form-control" id="new-size" name="size">
+          <br>
+        <div class="form-group">
+          <label for="new-crust"><strong>Crust</strong> (choose one)</label>
+            <select class="form-control" id="new-crust">
               <option value="">N/A</option>
-              <option value="SM">Small - 12 in..................$16.00</option>
-              <option value="MD">Medium - 16 in..............$24.00</option>
-              <option value="LG">Large - 20 in.................$32.00</option>
-              <option value="XL">Extra Large - 24 in........$40.00</option>
+              <option value="Thin">Thin</option>
+              <option value="Detroit Style">Detroit Style</option>
+              <option value="Chicago Style">Chicago Style</option>
+              <option value="Stuffed Crust">Stuffed Crust</option>
+            </select>
+        </div>  
+
+        <div class="form-group">
+          <label for="new-size"><strong>Size</strong> (choose one)</label>
+            <select class="form-control" id="new-size">
+              <option value="">N/A</option>
+              <option value="Small">Small - 12 in..................$16.00</option>
+              <option value="Medium">Medium - 16 in..............$24.00</option>
+              <option value="Large">Large - 20 in.................$32.00</option>
+              <option value="Extra Large">Extra Large - 24 in........$40.00</option>
             </select>
           </div>  
 
           <div class="form-group">
-          <label for="sauce"><strong>Sauce</strong> (choose one)</label>
-            <select class="form-control" id="new-sauze" name="sauce">
-              <option value="">N/A</option>
-              <option value="MA">Marinara</option>
-              <option value="GA">Garlic Cream</option>
-              <option value="PE">Pesto Basil</option>
-            </select>
-          </div>
+            <label for="sauce"><strong>Sauce</strong> (choose one)</label>
+              <select class="form-control" id="new-sauce" name="sauce">
+                <option value="">N/A</option>
+                <option value="Marinara">Marinara</option>
+                <option value="Garlic Cream">Garlic Cream</option>
+                <option value="Pesto Basil">Pesto Basil</option>
+              </select>
+            </div>
 
-          <div class="form-group"> 
-            <label for="toppings"><strong>Toppings</strong> ($2 each)</label>
-            <div class="checkboxes">
-              <div class="form-group" id="toppings">
-              <span>
-                <label for="selected-topping" class="checkbox-inline">
-                  <input type="checkbox" id="test" value="mozarella" name="selected-topping" checked>
-                  Mozarella 
-                </label>
-                <label for="selected-topping" class="checkbox-inline">
-                  <input type="checkbox" value="pepperoni" name="selected-topping">
-                  Pepperoni 
-                </label>  
-                <label for="selected-topping" class="checkbox-inline">
-                  <input type="checkbox" value="peppers" name="selected-topping">
-                  Green Peppers 
-                </label>      
-                <label for="selected-topping" class="checkbox-inline">
-                  <input type="checkbox" value="feta" name="selected-topping">
-                  Feta 
-                </label>  
-                <label for="selected-topping" class="checkbox-inline">
-                  <input type="checkbox" value="tomatoes" name="selected-topping">
-                  Sun Dried Tomatoes 
-                </label>  
-                <label for="selected-topping" class="checkbox-inline">
-                  <input type="checkbox" value="garlic" name="selected-topping">
-                  Roasted Garlic 
-                </label>  
-              <span>
+            <div class="form-group"> 
+              <label for="toppings"><strong>Toppings</strong> ($2 each)</label>
+              <div class="checkboxes">
+                <div class="form-group" id="toppings">
+                <span>
+                  <label for="selected-topping" class="checkbox-inline">
+                    <input type="checkbox" id="test" value="mozarella" name="selected-topping" checked>
+                    Mozarella 
+                  </label>
+                  <label for="selected-topping" class="checkbox-inline">
+                    <input type="checkbox" value="pepperoni" name="selected-topping">
+                    Pepperoni 
+                  </label>  
+                  <label for="selected-topping" class="checkbox-inline">
+                    <input type="checkbox" value="peppers" name="selected-topping">
+                    Green Peppers 
+                  </label>      
+                  <label for="selected-topping" class="checkbox-inline">
+                    <input type="checkbox" value="feta" name="selected-topping">
+                    Feta 
+                  </label>  
+                  <label for="selected-topping" class="checkbox-inline">
+                    <input type="checkbox" value="tomatoes" name="selected-topping">
+                    Sun Dried Tomatoes 
+                  </label>  
+                  <label for="selected-topping" class="checkbox-inline">
+                    <input type="checkbox" value="garlic" name="selected-topping">
+                    Roasted Garlic 
+                  </label>  
+                <span>
+                </div>
               </div>
+            </div>    
+
+          
             </div>
           </div>
           <br>
-
-          <button type="button" id="addOrder" class="btn btn-lng center-block">ADD TO ORDER</button>
-          <button type="submit" class="btn btn-lng center-block">SUBMIT ORDER</button>
+          <button type="button" id="addAddress" class="btn btn-lng center-block">Add</button>
+          <button type="submit" class="btn btn-lng center-block">Submit</button>
         </form>
-        <br>
-
         <hr>
-        <h2>Order:</h2>
-        <ul id="order">
+        <h2>Orders:</h2>
+        <ul id="contacts">
         </ul>
       </div>
       <div class="col-md-6">
-        <div id="show-order">
+        <div id="show-contact">
           <div class="row" id="name-row">
-            <p>Name: <span class="name"></span></p>
-            <p>Phone Number: <span class="phone-number"></span></p>
-            <p>Address line 1: <span class="address-1"></span></p>
-            <p>Address line 2: <span class="address-2"></span></p>
-            <p>City: <span class="city"></span></p>
+
+            <p>Last Name: <strong><span class="last-name"></span></strong></p>
+            <p>First Name: <strong><span class="first-name"></span></strong></p>
+            <p>Phone Number: <strong><span class="phone-number"></span></strong></p>
+            <hr>
+            <br>
+            <p>DELIVER TO:</p>
+            <p><strong><span class="address"></span></strong></p>
+            <p><strong><span class="city"></span></strong></p>
           </div>
           <div class="row">
             <div class="col-sm-6">
-              <p id="typeFirst"><strong>Your First Pie</strong></p>
-              <p>Selected Size: <span class="size"></span></p>
-              <p>Selected Sauce: <span class="sauce"></span></p>
-              <p>Selected Toppings: <span class="toppings"></span></p>
-              <p>Total: <span class="total"></span></p>
+              <p id="typePersonal">Pizza #1</p>
+              <p>Crust: <span class="crust"></span></p>
+              <p>Size: <span class="size"></span></p>
+              <p>Sauce: <span class="sauce"></span></p>
             </div>  
-            <div class="col-sm-6">
-              <p id="typeSecond"><strong>Your Second Pie</strong></p>
-              <p>Selected Size: <span class="second-size"></span></p>
-              <p>Selected Sauce: <span class="second-sauce"></span></p>
-              <p>Selected Toppings: <span class="toppings"></span></p>
-              <p>Total: <span class="total"></span></p>
-            </div>  
-          </div>  
-            
-            <div class="row" id="button-row">
-              <div id="buttons">
-              </div>
+
+            <div class="col-sm-6">        
+            <p id="typeBusiness">Pizza #2</p>
+              <p>Crust: <span class="business-crust"></span></p>
+              <p>Size: <span class="business-size"></span></p>
+              <p>Sauce: <span class="business-sauce"></span></p>
             </div>
-            
-          </div>    
+          </div>
+
+          <br>
+          <div class="row" id="button-row">
+            <div id="buttons">
+            </div>
+          </div>
         </div>
       </div>
-      
     </div>
-  </div>      
+  </div>
   <br>
   <div class="footer">
     <p>created by John Whitten in 2021 for <a href="https://www.epicodus.com/"> <em>Epicodus</em></a></p>
