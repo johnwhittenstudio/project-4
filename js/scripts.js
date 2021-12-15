@@ -60,9 +60,11 @@ Contact.prototype.findAddress = function(id){
 };
 //business logic for Addresses
 
-function Address(address, city, type, crust, size, sauce){
+function Address(address, city, state, zip, type, crust, size, sauce){
   this.address = address;
   this.city = city;
+  this.state = state;
+  this.zip = zip;
   this.type = type;
   this.crust = crust;
   this.size = size;
@@ -91,7 +93,9 @@ function findPersonal(address){
 
 function showPersonal(address){ 
   $(".address").html(address.address);
-  $(".city").html(address.city);   
+  $(".city").html(address.city);
+  $(".state").html(address.state);
+  $(".zip").html(address.zip);   
   $(".crust").html(address.crust);
   $(".size").html(address.size);
   $(".sauce").html(address.sauce);
@@ -148,6 +152,8 @@ function emptyForm(){
   // $("input#new-phone-number").val("");
   // $("input#new-address").val("");
   // $("select#new-city").val("");
+  // $("select#new-state").val("");
+  // $("select#new-zip").val("");
   $("select#new-crust").val("");
   $("select#new-size").val("");
   $("select#new-sauce").val("");
@@ -175,11 +181,13 @@ $(document).ready(function(){
     const inputtedPhoneNumber = $("input#new-phone-number").val();
     const inputtedAddress = $("input#new-address").val();
     const inputtedCity = $("input#city").val();
+    const selectedState = $("select#new-state").val();
+    const inputtedZip = $("input#new-zip").val();
     const selectedType = $("input[name='address-type']:checked").val();
     const selectedCrust = $("select#new-crust").val();
     const selectedSize = $("select#new-size").val();
     const selectedSauce = $("select#new-sauce").val();
-    let newAddress = new Address(inputtedAddress, inputtedCity, selectedType, selectedCrust, selectedSize, selectedSauce);
+    let newAddress = new Address(inputtedAddress, inputtedCity, selectedState, inputtedZip, selectedType, selectedCrust, selectedSize, selectedSauce);
 
     currentContact.lastName = inputtedLastName;
     currentContact.firstName = inputtedFirstName;
