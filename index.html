@@ -22,8 +22,12 @@
         <form id="new-order"></form>
 
           <div class="form-group">
-            <label for="new-name">Name</label>
-            <input type="text"  class="form-control" id="new-name">
+            <label for="new-first-name">First Name</label>
+            <input type="text"  class="form-control" id="new-first-name">
+          </div>
+          <div class="form-group">
+            <label for="new-last-name">Last Name</label>
+            <input type="text"  class="form-control" id="new-last-name">
           </div>
           <div class="form-group">
             <label for="new-phone-number">Phone Number</label>
@@ -53,10 +57,10 @@
 
           <h4>Pick Your Pie:</h4>
           <div class="form-group type-select">
-            <label for="firstPie">Only One</label>
-            <input type="radio" id="first" value="first" name="pizza-order" checked="checked">
-            <label for="secondPie">How About Another</label>
-            <input type="radio" id="second" value="second" name="pizza-order">
+            <label for="firstPie">First Pie</label>
+            <input type="radio" id="first" value="first" name="pizza" checked="checked">
+            <label for="secondPie">Second Pie</label>
+            <input type="radio" id="second" value="second" name="pizza">
           </div>
           <br>
 
@@ -122,7 +126,7 @@
         <br>
 
         <hr>
-        <h2>Your Order:</h2>
+        <h2>Order:</h2>
         <ul id="order">
         </ul>
       </div>
@@ -137,21 +141,26 @@
           </div>
           <div class="row">
             <div class="col-sm-6">
-              <p id="typeFirst">Your First Pie</p>
+              <p id="typeFirst"><strong>Your First Pie</strong></p>
               <p>Selected Size: <span class="size"></span></p>
               <p>Selected Sauce: <span class="sauce"></span></p>
               <p>Selected Toppings: <span class="toppings"></span></p>
+              <p>Total: <span class="total"></span></p>
             </div>  
             <div class="col-sm-6">
-              <p id="typeSecond">Your Second Pie</p>
+              <p id="typeSecond"><strong>Your Second Pie</strong></p>
               <p>Selected Size: <span class="second-size"></span></p>
               <p>Selected Sauce: <span class="second-sauce"></span></p>
-              <p>Selected Toppings: <span class="second-toppings"></span></p>
+              <p>Selected Toppings: <span class="toppings"></span></p>
+              <p>Total: <span class="total"></span></p>
             </div>  
+          </div>  
+            
             <div class="row" id="button-row">
               <div id="buttons">
               </div>
             </div>
+            
           </div>    
         </div>
       </div>

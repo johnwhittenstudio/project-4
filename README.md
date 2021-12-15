@@ -106,10 +106,34 @@ Expected Output: Customer { name: "John", address: "123 Yum Yum Lane, Hungryvill
 Test passed!
 
   Calculate Price:
-    • Pizza = $12 flate rate
+    • Pizza = $18 flate rate
     • Size: small + $1; medium + $4; large + $8; extra large + $12
-    • Toppings (regular): Mozarella + $2; Pepperoni + $2; Green Peppers + $2
-    • Toppings (deluxe): Feta + $3, Sun Dried Tomatoes + $3, Roasted Garlic + $3
+    • Toppings: Mozarella + $2; Pepperoni + $2; Green Peppers + $2, Feta + $2, Sun Dried Tomatoes + $2, Roasted Garlic + $2
+    (If I'm feeling fancy and things are working)
+      • Toppings (regular): Mozarella + $2; Pepperoni + $2; Green Peppers + $2
+      • Toppings (deluxe): Feta + $3, Sun Dried Tomatoes + $3, Roasted Garlic + $3
+
+Describe: Price()
+
+Test: "It should return a value calculated by adding the pizza size and the number of toppings"
+Code: let totalPrice = new Price
+
+let total = 16;
+  if (this.size === "extra large") {
+    total += 24;
+  } else if (this.size === "large") {
+    total += 16;
+  } else if (this.size === "medium") {
+    total += 8;
+  } else (this.size === "small") {
+    total += 0;
+  }
+
+  return total
+
+
+Expected Output: Customer { name: "John", address: "123 Yum Yum Lane, Hungryville, Oregon 12345" }
+Test passed!
 
 
 ```

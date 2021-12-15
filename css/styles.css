@@ -1,19 +1,43 @@
-#show-order{
+/* #show-order{
   display: none;
-}
+} */
 
 .header1 {
-  padding: 30px;
-  text-align: center;
+  padding-top: 30px;
   background: white;
   color: black;
 }
 
-.header2 {
+h1 {
+  font-family: 'Trattatello';
+  font-size: 60px;
+}
+
+/* .header2 {
   padding: 30px;
   text-align: center;
   background: white;
   color: black;
+} */ */
+
+#name-row{
+  text-align: center;
+  border: 2px solid black;
+}
+
+#typeOrder{
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+/* 
+#typeBusiness{
+  text-align: center;
+  border-bottom: 2px solid black;
+} */
+
+#buttons{
+  margin-left: 40%;
+  margin-right: 40%;
 }
 
 .checkboxes {
