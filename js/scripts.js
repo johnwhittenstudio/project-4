@@ -1,27 +1,27 @@
 // Business Logic for AddressBook ---------
-function AddressBook() {
+function PizzaOrder() {
   this.contacts = {};
   this.currentId = 0;
 }
 
-AddressBook.prototype.addContact = function(contact) {
+PizzaOrder.prototype.addContact = function(contact) {
   contact.id = this.assignId();
   this.contacts[contact.id] = contact;
 };
 
-AddressBook.prototype.assignId = function() {
+PizzaOrder.prototype.assignId = function() {
   this.currentId += 1;
   return this.currentId;
 };
 
-AddressBook.prototype.findContact = function(id) {
+PizzaOrder.prototype.findContact = function(id) {
   if (this.contacts[id] != undefined) {
     return this.contacts[id];
   }
   return false;
 };
 
-AddressBook.prototype.deleteContact = function(id) {
+PizzaOrder.prototype.deleteContact = function(id) {
   if (this.contacts[id] === undefined) {
     return false;
   }
@@ -58,9 +58,10 @@ Contact.prototype.findAddress = function(id){
   }
   return false;
 };
+
 //business logic for Addresses
 
-function Address(address, city, state, zip, type, crust, size, sauce){
+function Address(address, city, state, zip, type, crust, size, sauce, toppings){
   this.address = address;
   this.city = city;
   this.state = state;
@@ -69,14 +70,15 @@ function Address(address, city, state, zip, type, crust, size, sauce){
   this.crust = crust;
   this.size = size;
   this.sauce = sauce;
+  this.toppings = toppings;
 }
 
 //other business logic
-function displayContactDetails(addressBookToDisplay){
+function displayContactDetails(pizzaOrderToDisplay){
   let contactList = $("ul#contacts");
   let htmlForContactInfo = "";
-  Object.keys(addressBookToDisplay.contacts).forEach(function(key){
-    const contact = addressBookToDisplay.findContact(key);
+  Object.keys(pizzaOrderToDisplay.contacts).forEach(function(key){
+    const contact = pizzaOrderToDisplay.findContact(key);
     htmlForContactInfo += "<li id=" + contact.id + ">" + contact.firstName + " " + contact.lastName +"</li>";
   });
   contactList.html(htmlForContactInfo); 
@@ -99,17 +101,17 @@ function showPersonal(address){
   $(".crust").html(address.crust);
   $(".size").html(address.size);
   $(".sauce").html(address.sauce);
+  $(".toppings").html(address.toppings);
 }
 
 function showBusiness(address){
-  // $(".business-address").html(address.address);
-  // $(".business-city").html(address.city);
   $(".business-crust").html(address.crust);
   $(".business-size").html(address.size);
   $(".business-sauce").html(address.sauce);
+  $(".business-toppings").html(address.toppings);
 }
 function showContact(contactID){
-  const contact = addressBook.findContact(contactID);
+  const contact = pizzaOrder.findContact(contactID);
   $("#show-contact").show();
   $(".first-name").html(contact.firstName);
   $(".last-name").html(contact.lastName);
@@ -140,9 +142,9 @@ function attachContactListeners(){
     showContact(this.id);
   });
   $("#buttons").on("click", ".deleteButton", function() {
-    addressBook.deleteContact(this.id);
+    pizzaOrder.deleteContact(this.id);
     $("#show-contact").hide();
-    displayContactDetails(addressBook);
+    displayContactDetails(pizzaOrder);
   });
 }
 
@@ -157,11 +159,13 @@ function emptyForm(){
   $("select#new-crust").val("");
   $("select#new-size").val("");
   $("select#new-sauce").val("");
+  $("select#new-toppings").val("");
 }
-//ui logic
 
 
-let addressBook = new AddressBook();
+//UI logic
+
+let pizzaOrder = new PizzaOrder();
 $(document).ready(function(){
 
   attachContactListeners();
@@ -169,8 +173,8 @@ $(document).ready(function(){
 
   $("form#new-contact").submit(function(event){
     event.preventDefault();
-    addressBook.addContact(currentContact);
-    displayContactDetails(addressBook);
+    pizzaOrder.addContact(currentContact);
+    displayContactDetails(pizzaOrder);
     emptyForm();
   });
 
@@ -187,7 +191,8 @@ $(document).ready(function(){
     const selectedCrust = $("select#new-crust").val();
     const selectedSize = $("select#new-size").val();
     const selectedSauce = $("select#new-sauce").val();
-    let newAddress = new Address(inputtedAddress, inputtedCity, selectedState, inputtedZip, selectedType, selectedCrust, selectedSize, selectedSauce);
+    const selectedToppings = $("select#new-toppings").val();
+    let newAddress = new Address(inputtedAddress, inputtedCity, selectedState, inputtedZip, selectedType, selectedCrust, selectedSize, selectedSauce, selectedToppings);
 
     currentContact.lastName = inputtedLastName;
     currentContact.firstName = inputtedFirstName;
@@ -197,5 +202,5 @@ $(document).ready(function(){
   });
 });
 
-//playground
+
 
